@@ -13,7 +13,7 @@ def producer = task {
 
 def consumer = task {
     while (true) {
-        sleep 500  //simulating a slow consumer
+//        sleep 500  //simulating a slow consumer
         final Object msg = channel.val
         println "Received $msg"
     }
